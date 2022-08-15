@@ -63,7 +63,7 @@ def register():
 	empid = request.json.get('empid')
 	user_type = "nuser"
 
-	if(email.endswith("virtusa.com")):
+	if(email.endswith("abccompany.com")):
 		try:
 			user = pyauth.create_user_with_email_and_password(email=email,password=password)
 			userobj={
